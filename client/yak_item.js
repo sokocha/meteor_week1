@@ -30,3 +30,10 @@ Template.yakItem.events({
     }
   }
 });
+
+Template.yakItem.helpers({
+
+  commentsCount: function(){
+    return Comments.find({postId: this._id}).count();
+  }
+});
