@@ -1,5 +1,5 @@
 Template.yaksList.helpers({
   yaks: function() {
-  return Yaks.find({}, {sort : {score: -1}});
+    return Yaks.find({}, {sort : {score: -1}});
   }
-});
+})
